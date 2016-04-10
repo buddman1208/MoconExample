@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="kr.edcan.myapplication.MainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/image"
+                android:background="@drawable/animation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.Toolbar>
+
+        <com.nhn.android.maps.NMapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.nhn.android.maps.NMapView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:layout_width="280dp"
+        android:background="#FFFFFF"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:text="ㅁㄴㅇㄻㄴㅇㄹ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
